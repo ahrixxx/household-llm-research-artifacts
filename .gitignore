@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env*
+outputs/
+data/raw/
+*.dta
+*.sav
+*.parquet
+*.pkl
+*.joblib
+.DS_Store

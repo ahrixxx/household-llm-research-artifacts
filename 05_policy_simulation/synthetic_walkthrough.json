@@ -1,0 +1,581 @@
+{
+  "status": "SYNTHETIC_ONLY",
+  "purpose": "Implementation trace, not LLM behavior or policy effects",
+  "actual_llm_calls": 0,
+  "response_source": "deterministic SyntheticModel fixture, not an LLM",
+  "paid_calls": 0,
+  "months": [
+    {
+      "month": 1,
+      "income_krw": 230000,
+      "opening_cash_krw": 530000,
+      "plan_months": [
+        "1",
+        "2",
+        "3"
+      ],
+      "planned_food_krw": 100000,
+      "executed_food_krw": 100000,
+      "closing_cash_krw": 430000,
+      "closing_deposit_krw": 100000,
+      "first_choice_feasible": false,
+      "attempts": 2,
+      "plan_id": "plan/m001_p000",
+      "execution_id": "execution/m001",
+      "execution_plan_id": "plan/m001_p001"
+    },
+    {
+      "month": 2,
+      "income_krw": 230000,
+      "opening_cash_krw": 660000,
+      "plan_months": [
+        "2",
+        "3",
+        "4"
+      ],
+      "planned_food_krw": 100000,
+      "executed_food_krw": 100000,
+      "closing_cash_krw": 560000,
+      "closing_deposit_krw": 100000,
+      "first_choice_feasible": true,
+      "attempts": 1,
+      "plan_id": "plan/m002_p000",
+      "execution_id": "execution/m002",
+      "execution_plan_id": "plan/m002_p000"
+    },
+    {
+      "month": 3,
+      "income_krw": 230000,
+      "opening_cash_krw": 790000,
+      "plan_months": [
+        "3",
+        "4",
+        "5"
+      ],
+      "planned_food_krw": 100000,
+      "executed_food_krw": 100000,
+      "closing_cash_krw": 690000,
+      "closing_deposit_krw": 100000,
+      "first_choice_feasible": true,
+      "attempts": 1,
+      "plan_id": "plan/m003_p000",
+      "execution_id": "execution/m003",
+      "execution_plan_id": "plan/m003_p000"
+    },
+    {
+      "month": 4,
+      "income_krw": 150000,
+      "opening_cash_krw": 840000,
+      "plan_months": [
+        "4",
+        "5",
+        "6"
+      ],
+      "planned_food_krw": 100000,
+      "executed_food_krw": 100000,
+      "closing_cash_krw": 740000,
+      "closing_deposit_krw": 100000,
+      "first_choice_feasible": true,
+      "attempts": 1,
+      "plan_id": "plan/m004_p000",
+      "execution_id": "execution/m004",
+      "execution_plan_id": "plan/m004_p000"
+    }
+  ],
+  "quarter_reflection": {
+    "id": "interpretation/m003_reflection",
+    "kind": "interpretation",
+    "month": 3,
+    "available_month": 4,
+    "data": {
+      "claims": [
+        {
+          "path": "/closing_state/cash_krw",
+          "source_id": "execution/m003",
+          "value": 690000
+        }
+      ],
+      "lessons": [
+        "경제 경험의 사실과 해석을 분리한다."
+      ],
+      "next_plan_considerations": [
+        "다음 달 가용 자원을 다시 확인한다."
+      ],
+      "text": "합성 분기 경제 경험을 요약한다. 행동 타당성의 증거가 아니다."
+    }
+  },
+  "first_month_initial_choice": {
+    "id": "choice/m001_a000",
+    "kind": "choice",
+    "month": 1,
+    "available_month": 1,
+    "data": {
+      "action": {
+        "buy_units": 0,
+        "cbdc_use_krw": {
+          "clothing": 0,
+          "communication": 0,
+          "daily_necessities": 0,
+          "dining_out": 0,
+          "durables": 0,
+          "food": 0,
+          "healthcare": 0,
+          "housing": 0,
+          "private_education": 0,
+          "public_education": 0,
+          "public_transport": 0,
+          "recreation": 0
+        },
+        "consumption_krw": {
+          "clothing": 0,
+          "communication": 0,
+          "daily_necessities": 0,
+          "dining_out": 0,
+          "durables": 0,
+          "food": 530001,
+          "healthcare": 0,
+          "housing": 0,
+          "private_education": 0,
+          "public_education": 0,
+          "public_transport": 0,
+          "recreation": 0
+        },
+        "deposit_delta_krw": 0,
+        "sell_units": 0
+      },
+      "action_claims": [
+        {
+          "path": "/buy_units",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/clothing",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/communication",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/daily_necessities",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/dining_out",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/durables",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/food",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/healthcare",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/housing",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/private_education",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/public_education",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/public_transport",
+          "value": 0
+        },
+        {
+          "path": "/cbdc_use_krw/recreation",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/clothing",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/communication",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/daily_necessities",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/dining_out",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/durables",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/food",
+          "value": 530001
+        },
+        {
+          "path": "/consumption_krw/healthcare",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/housing",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/private_education",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/public_education",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/public_transport",
+          "value": 0
+        },
+        {
+          "path": "/consumption_krw/recreation",
+          "value": 0
+        },
+        {
+          "path": "/deposit_delta_krw",
+          "value": 0
+        },
+        {
+          "path": "/sell_units",
+          "value": 0
+        }
+      ],
+      "deviation_reason": "제약 검사 시험용으로 의도적으로 초과했다.",
+      "environment_understanding": {
+        "cash_transfer_krw": 0,
+        "cbdc_grant_krw": 0,
+        "current_ui_krw": 80000,
+        "etf_price_krw": 10000,
+        "first_ui_unpaid_month": 4,
+        "income_krw": 230000,
+        "last_ui_paid_month": 3
+      },
+      "explanation": {
+        "claims": [
+          {
+            "path": "/cash_krw",
+            "source_id": "state/m001_open",
+            "value": 530000
+          }
+        ],
+        "text": "합성 선택: 현재 예산에 근거한다."
+      },
+      "plan_id": "plan/m001_p000"
+    }
+  },
+  "first_month_feedback": {
+    "id": "event/m001_a000_feedback",
+    "kind": "event",
+    "month": 1,
+    "available_month": 1,
+    "data": {
+      "calculation": {
+        "buy_fee_krw": 0,
+        "buy_gross_krw": 0,
+        "cash_available_krw": 530000,
+        "cash_required_krw": 530001,
+        "cbdc_available_krw": 0,
+        "cbdc_used_krw": 0,
+        "consumption_cash_krw": 530001,
+        "deposit_delta_krw": 0,
+        "opening_cash_krw": 530000,
+        "sale_gross_krw": 0,
+        "sell_fee_krw": 0
+      },
+      "choice_id": "choice/m001_a000",
+      "executed": false,
+      "tags": [
+        "constraint_feedback"
+      ],
+      "type": "constraint_feedback",
+      "unchanged_opening_state_hash": "a81c03eb5d06ad27182c2425778a3d78d4a8c1982d6033ab25fa061747b60fef",
+      "unchanged_opening_state_id": "state/m001_open",
+      "violations": [
+        {
+          "code": "CASH_BUDGET",
+          "excess": 1,
+          "lhs": 530001,
+          "relation": "<=",
+          "rhs": 530000
+        }
+      ]
+    }
+  },
+  "first_month_revised_plan": {
+    "id": "plan/m001_p001",
+    "kind": "plan",
+    "month": 1,
+    "available_month": 1,
+    "data": {
+      "claims": [
+        {
+          "path": "/cash_krw",
+          "source_id": "state/m001_open",
+          "value": 530000
+        }
+      ],
+      "reason": "현재 현금과 경제 경험을 확인하여 합성 계획을 작성한다.",
+      "schedule": {
+        "1": {
+          "buy_units": 0,
+          "cbdc_use_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 0,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "consumption_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 100000,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "deposit_delta_krw": 0,
+          "sell_units": 0
+        },
+        "2": {
+          "buy_units": 0,
+          "cbdc_use_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 0,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "consumption_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 100000,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "deposit_delta_krw": 0,
+          "sell_units": 0
+        },
+        "3": {
+          "buy_units": 0,
+          "cbdc_use_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 0,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "consumption_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 100000,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "deposit_delta_krw": 0,
+          "sell_units": 0
+        }
+      },
+      "supersedes": "plan/m001_p000"
+    }
+  },
+  "month4_plan": {
+    "id": "plan/m004_p000",
+    "kind": "plan",
+    "month": 4,
+    "available_month": 4,
+    "data": {
+      "claims": [
+        {
+          "path": "/cash_krw",
+          "source_id": "state/m004_open",
+          "value": 840000
+        }
+      ],
+      "reason": "현재 현금과 경제 경험을 확인하여 합성 계획을 작성한다.",
+      "schedule": {
+        "4": {
+          "buy_units": 0,
+          "cbdc_use_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 0,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "consumption_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 100000,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "deposit_delta_krw": 0,
+          "sell_units": 0
+        },
+        "5": {
+          "buy_units": 0,
+          "cbdc_use_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 0,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "consumption_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 100000,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "deposit_delta_krw": 0,
+          "sell_units": 0
+        },
+        "6": {
+          "buy_units": 0,
+          "cbdc_use_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 0,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "consumption_krw": {
+            "clothing": 0,
+            "communication": 0,
+            "daily_necessities": 0,
+            "dining_out": 0,
+            "durables": 0,
+            "food": 100000,
+            "healthcare": 0,
+            "housing": 0,
+            "private_education": 0,
+            "public_education": 0,
+            "public_transport": 0,
+            "recreation": 0
+          },
+          "deposit_delta_krw": 0,
+          "sell_units": 0
+        }
+      },
+      "supersedes": "plan/m003_p000"
+    }
+  },
+  "month4_plan_input_source_ids": [
+    "profile/fixed",
+    "state/m004_open",
+    "event/m004_environment",
+    "event/m003_environment",
+    "state/m003_open",
+    "execution/m003",
+    "state/m003_close",
+    "plan/m003_p000",
+    "interpretation/m003_reflection",
+    "event/m002_environment",
+    "state/m002_open",
+    "execution/m002",
+    "state/m002_close",
+    "plan/m002_p000",
+    "event/m001_environment",
+    "state/m001_open",
+    "execution/m001",
+    "state/m001_close",
+    "plan/m001_p001"
+  ],
+  "month4_previous_plan_id": "plan/m003_p000",
+  "checks": {
+    "reflection_available_from_month4": true,
+    "not_in_month3_plan": true,
+    "reflection_in_month4_plan_input": true,
+    "correction_feedback_not_in_month4_memory": true
+  }
+}

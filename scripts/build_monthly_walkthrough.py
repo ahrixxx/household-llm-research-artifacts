@@ -1,0 +1,138 @@
+"""Export a four-month SYNTHETIC implementation trace. Standard library only."""
+from pathlib import Path
+import json,sys,tempfile
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'code'))
+from phase2_monthly.demo import SyntheticModel,demo_rules
+from phase2_monthly.engine import EngineConfig,MonthlyEngine
+from phase2_monthly.ledger import ReferenceLedger
+from phase2_monthly.scenarios import b_duration_month
+
+def build():
+ with tempfile.TemporaryDirectory(prefix='monthly-walkthrough-') as scratch:
+  model=SyntheticModel(inject_first_violation=True)
+  engine=MonthlyEngine(Path(scratch),{'household':'SYNTHETIC_001','condition':'B_UI_3','repeat':0},
+   {'source':'synthetic','household_size':2},
+   {'cash_krw':300000,'deposit_krw':100000,'etf_units':0,'cbdc_lots':[]},
+   EngineConfig.study(),ReferenceLedger(demo_rules()),model)
+  months=[]
+  for m in range(1,5):
+   obs=b_duration_month(m,3,150000,80000,10000,ui_recipient=True)
+   result=engine.step(obs);assert result['status']=='COMPLETE'
+   key=f'm{m:03d}'
+   plan=engine.store.get('plan',key+'_p000')
+   exe=engine.store.get('execution',key)
+   opening=engine.store.get('state',key+'_open')
+   months.append({'month':m,'income_krw':obs['income_krw'],'opening_cash_krw':opening['data']['cash_krw'],
+    'plan_months':list(plan['data']['schedule']),'planned_food_krw':plan['data']['schedule'][str(m)]['consumption_krw']['food'],
+    'executed_food_krw':exe['data']['action']['consumption_krw']['food'],
+    'closing_cash_krw':exe['data']['closing_state']['cash_krw'],
+    'closing_deposit_krw':exe['data']['closing_state']['deposit_krw'],
+    'first_choice_feasible':result['first_choice_feasible'],'attempts':result['attempts'],
+    'plan_id':plan['id'],'execution_id':exe['id'],'execution_plan_id':exe['data']['plan_id']})
+  reflection=engine.store.get('interpretation','m003_reflection')
+  request4=engine.store.get('request','m004_p000')
+  source_ids=[r['id'] for r in request4['data']['context']['sources']]
+  assert reflection['available_month']==4 and reflection['id'] in source_ids
+  request3=engine.store.get('request','m003_p000')
+  assert reflection['id'] not in [r['id'] for r in request3['data']['context']['sources']]
+  assert all('feedback' not in sid for sid in source_ids)
+  def record(r):return {k:r[k] for k in ('id','kind','month','available_month','data')}
+  data={'status':'SYNTHETIC_ONLY','purpose':'Implementation trace, not LLM behavior or policy effects',
+   'actual_llm_calls':0,'response_source':'deterministic SyntheticModel fixture, not an LLM','paid_calls':0,'months':months,'quarter_reflection':record(reflection),
+   'first_month_initial_choice':record(engine.store.get('choice','m001_a000')),
+   'first_month_feedback':record(engine.store.get('event','m001_a000_feedback')),
+   'first_month_revised_plan':record(engine.store.get('plan','m001_p001')),
+   'month4_plan':record(engine.store.get('plan','m004_p000')),
+   'month4_plan_input_source_ids':source_ids,
+   'month4_previous_plan_id':request4['data']['context']['previous_plan']['id'],
+   'checks':{'reflection_available_from_month4':True,'not_in_month3_plan':True,'reflection_in_month4_plan_input':True,'correction_feedback_not_in_month4_memory':True}}
+ return data
+
+def main():
+ data=build();out=ROOT/'05_policy_simulation';(out/'synthetic_walkthrough.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ text='''# 실행 예시 · 계획에서 반성, 다음 계획까지
+
+**LLM 시연 아님 · 가상 가구 · 정해진 시험용 응답 · 실제 LLM 호출 0회**
+
+실제 LLM을 호출한 시연이 아니라, 정해진 시험용 응답으로 계획·실행·반성·다음 계획의 연결 구조를 확인한 예시입니다.
+
+기존 월별 엔진과 `SyntheticModel`을 실행해 1~4개월 기록을 추출했습니다. 24개월 설정의 첫 4개월을 보여주는 구현 예시이며, 소비 반응이나 반성의 효과를 평가한 실험은 아닙니다. 숫자는 기능 확인용으로 작게 설정한 가상 금액입니다.
+
+## 1. 시작 조건
+
+| 항목 | 예시 설정 |
+|---|---|
+| 가구 | 가상 2인 가구 |
+| 시작 잔액 | 현금 30만 원, 예금 10만 원, ETF 0개 |
+| 소득 | 매월 잔존소득 15만 원, 1~3개월 실업급여 8만 원 추가 |
+| 4개월 변화 | 실업급여 종료로 월 소득 23만 원 → 15만 원 |
+| 정책 조건 | 기존 엔진의 B_UI_3 시험 조건, 별도 정책 지급금 없음 |
+| 시험용 선택 규칙 | 가용 현금 범위에서 식비 최대 10만 원, 나머지 소비·거래 0 |
+| 계획·반성 | 향후 3개월 계획을 매월 갱신, 3개월 말 반성을 4개월부터 제공 |
+
+예금 10만 원은 이 예시에서 유지합니다. 실업급여 종료 일정은 첫 달부터 공지된 조건이며 4개월에 갑자기 알려진 사건이 아닙니다.
+
+## 2. 매월 계획과 실제 실행
+
+단위: 만 원. 월초 현금은 당월 소득이 입금된 뒤의 금액입니다. 계획 식비는 해당 월에 갱신한 계획의 당월 값입니다.
+
+| 월 | 계획 대상 기간 | 월 소득 | 입금 후 현금 | 계획 식비 | 실제 식비 | 월말 현금 |
+|---|---|---:|---:|---:|---:|---:|
+'''
+ for r in data['months']:
+  text+=f"| {r['month']}개월 | {'~'.join([r['plan_months'][0],r['plan_months'][-1]])}개월 | {r['income_krw']/10000:g} | {r['opening_cash_krw']/10000:g} | {r['planned_food_krw']/10000:g} | {r['executed_food_krw']/10000:g} | {r['closing_cash_krw']/10000:g} |\n"
+ text+='''
+1개월에는 1~3개월 계획을 세우고 1개월만 집행합니다. 2개월에는 실제 월말 잔액과 과거 기록을 받아 2~4개월 계획으로 갱신합니다. 이미 세운 3개월 계획을 그대로 일괄 집행하는 방식이 아닙니다.
+
+## 3. 당월 제약 위반 수정 — 경제적 반성과 별도
+
+1개월의 첫 선택에는 검사 목적으로 식비 **530,001원**을 넣었습니다. 가용 현금 530,000원을 1원 초과하므로 집행하지 않고 같은 시작 상태에서 다시 계획·선택했습니다. 수정 후 식비 100,000원만 집행하여 월말 현금은 430,000원이 되었습니다.
+
+| 보존 기록 | 의미 |
+|---|---|
+| `plan/m001_p000` | 최초 계획 |
+| `choice/m001_a000` | 제약을 위반한 최초 선택 |
+| `event/m001_a000_feedback` | 위반 내역과 미집행 상태 |
+| `plan/m001_p001` | 수정 계획 |
+| `execution/m001` | 유효한 선택의 실제 집행 |
+
+최초 선택을 지우거나 잘못된 거래를 일부 집행하지 않습니다. 이 수정 피드백은 당월 수정과 연구 기록에 남고, 이후 경제적 회상·반성의 경험에는 넣지 않습니다.
+
+## 4. 3개월 말 반성
+
+엔진은 1~3개월의 경제환경·월초 상태·계획·실행·월말 상태를 반성 단계에 제공합니다. 이 실행에서 생성된 시험용 반성은 다음과 같습니다.
+
+| 반성의 구성 | 실제 시험용 출력 |
+|---|---|
+| 요약 | 합성 분기 경제 경험을 요약한다. 행동 타당성의 증거가 아니다. |
+| 인용한 사실 | `execution/m003`의 월말 현금 690,000원 |
+| 해석 | 경제 경험의 사실과 해석을 분리한다. |
+| 다음 계획 고려사항 | 다음 달 가용 자원을 다시 확인한다. |
+| 보존 위치·이용 시점 | `interpretation/m003_reflection`, 4개월부터 이용 가능 |
+
+이 문장은 LLM이 실제 경험에서 학습해 만든 결과가 아니라 시험용 응답입니다. 여기서는 반성의 생성·저장·전달 경로를 확인합니다. 반성을 생성해도 3개월 말 현금 69만 원이나 과거 집행 기록은 바뀌지 않습니다.
+
+## 5. 4개월 계획에 무엇이 전달됐는가
+
+실제 `request/m004_p000`의 입력에서 다음 연결을 확인했습니다.
+
+| 전달 정보 | 기록에서 확인한 내용 |
+|---|---|
+| 현재 경제 상태 | 급여 종료 후 소득 15만 원 반영, 가용 현금 84만 원 |
+| 이전 계획 | `plan/m003_p000` |
+| 직전 실행 경험 | 3개월의 환경·상태·계획·집행 기록 |
+| 최신 반성 | `interpretation/m003_reflection` |
+| 반성의 사실 근거 | `execution/m003`의 월말 현금 기록 |
+
+4개월 계획은 4~6개월을 대상으로 새로 생성됐습니다. 시험용 규칙은 반성 내용을 받아도 소비 규칙을 바꾸지 않으므로 식비는 계속 10만 원입니다. 이 예시에서 확인한 것은 **반성이 다음 계획의 입력으로 연결됨**이며, 반성을 이용해 행동이 개선됐다는 결과는 아닙니다.
+
+## 실행 기록과 재현
+
+[실제 추출 기록 JSON](synthetic_walkthrough.json) · [예시 생성 코드](../scripts/build_monthly_walkthrough.py) · [월별 엔진](../code/phase2_monthly/engine.py)
+
+재생성: 저장소 루트에서 `python3 scripts/build_monthly_walkthrough.py`. 표준 라이브러리만 사용하며 실제 가구자료·API 키·유료 호출이 필요 없습니다. 원시 시험 기록은 임시 디렉터리에서 생성하고 공개용 발췌만 저장합니다.
+'''
+ (out/'EXECUTION_EXAMPLE.md').write_text(text)
+ print(json.dumps({'months':data['months'],'checks':data['checks']},ensure_ascii=False,indent=2))
+if __name__=='__main__':main()

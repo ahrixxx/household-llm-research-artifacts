@@ -1,0 +1,34 @@
+{
+  "unit": "2023 real KRW/month",
+  "status": "development exploratory results, not final held-out test",
+  "catboost_assisted": {
+    "households": 96,
+    "paired_comparisons": {
+      "catboost": {
+        "assisted_minus_reference_item_mae": 562.2912166831828,
+        "paired_household_ci95": [
+          -3226.5060020278675,
+          4283.677077861612
+        ],
+        "assisted_better_households": 51
+      },
+      "llm_v61": {
+        "assisted_minus_reference_item_mae": -4768.206644095776,
+        "paired_household_ci95": [
+          -8678.710657113717,
+          -2125.567331597224
+        ],
+        "assisted_better_households": 62
+      }
+    },
+    "actual_mean_total_change": -58184.00714816212,
+    "actual_total_change_sd": 534883.3486144098
+  },
+  "B40_changes": {
+    "weighting": "Each family averages its selected years; sample SD across40families per repetition then average. Not a fixed single-year population.",
+    "actual_total_mean_change": 91768.9395600684,
+    "pred_total_mean_change": -173067.9884550975,
+    "actual_total_change_sd": 696826.8475628911,
+    "pred_total_change_sd": 310166.8427864599
+  }
+}

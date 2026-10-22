@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="792pt" viewBox="0 0 1008 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-22T16:16:23.335164</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1008 792 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 141.12 333.105882 
+L 477.12 333.105882 
+L 477.12 118.8 
+L 141.12 118.8 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 141.12 333.105882 
+L 141.12 118.8 
+" clip-path="url(#pfc74b7284b)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="141.12" y="346.505882" transform="rotate(-0 141.12 346.505882)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 211.856842 333.105882 
+L 211.856842 118.8 
+" clip-path="url(#pfc74b7284b)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="211.856842" y="346.505882" transform="rotate(-0 211.856842 346.505882)">2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 282.593684 333.105882 
+L 282.593684 118.8 
+" clip-path="url(#pfc74b7284b)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="282.593684" y="346.505882" transform="rotate(-0 282.593684 346.505882)">4</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 353.330526 333.105882 
+L 353.330526 118.8 
+" clip-path="url(#pfc74b7284b)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="353.330526" y="346.505882" transform="rotate(-0 353.330526 346.505882)">6</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 424.067368 333.105882 
+L 424.067368 118.8 
+" clip-path="url(#pfc74b7284b)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="424.067368" y="346.505882" transform="rotate(-0 424.067368 346.505882)">8</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #667285" x="309.12" y="368.705882" transform="rotate(-0 309.12 368.705882)">MAE · 만 원/월</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="139.75743" transform="rotate(-0 137.62 139.75743)">LLM</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="162.543808" transform="rotate(-0 137.62 162.543808)">CatBoost</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="185.330186" transform="rotate(-0 137.62 185.330186)">전년 소비 유지</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="208.116563" transform="rotate(-0 137.62 208.116563)">Ridge</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="230.902941" transform="rotate(-0 137.62 230.902941)">Lasso</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="253.689319" transform="rotate(-0 137.62 253.689319)">중앙값 회귀</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_17"/>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="276.475697" transform="rotate(-0 137.62 276.475697)">RF-MAE</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_18"/>
+     <g id="text_14">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="299.262074" transform="rotate(-0 137.62 299.262074)">RF-MSE</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_19"/>
+     <g id="text_15">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="322.048452" transform="rotate(-0 137.62 322.048452)">HistGBM</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 141.12 128.541176 
+L 313.468872 128.541176 
+L 313.468872 141.073684 
+L 141.12 141.073684 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #3659d9"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 141.12 151.327554 
+L 294.745964 151.327554 
+L 294.745964 163.860062 
+L 141.12 163.860062 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 141.12 174.113932 
+L 316.375298 174.113932 
+L 316.375298 186.64644 
+L 141.12 186.64644 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 141.12 196.90031 
+L 337.622717 196.90031 
+L 337.622717 209.432817 
+L 141.12 209.432817 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 141.12 219.686687 
+L 320.187867 219.686687 
+L 320.187867 232.219195 
+L 141.12 232.219195 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 141.12 242.473065 
+L 300.519397 242.473065 
+L 300.519397 255.005573 
+L 141.12 255.005573 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 141.12 265.259443 
+L 308.32391 265.259443 
+L 308.32391 277.79195 
+L 141.12 277.79195 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 141.12 288.04582 
+L 324.28083 288.04582 
+L 324.28083 300.578328 
+L 141.12 300.578328 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 141.12 310.832198 
+L 327.749481 310.832198 
+L 327.749481 323.364706 
+L 141.12 323.364706 
+z
+" clip-path="url(#pfc74b7284b)" style="fill: #738293"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="318.508872" y="137.80743" transform="rotate(-0 318.508872 137.80743)">4.87</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="299.785964" y="160.593808" transform="rotate(-0 299.785964 160.593808)">4.34</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="321.415298" y="183.380186" transform="rotate(-0 321.415298 183.380186)">4.96</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="342.662717" y="206.166563" transform="rotate(-0 342.662717 206.166563)">5.56</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="325.227867" y="228.952941" transform="rotate(-0 325.227867 228.952941)">5.06</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="305.559397" y="251.739319" transform="rotate(-0 305.559397 251.739319)">4.51</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="313.36391" y="274.525697" transform="rotate(-0 313.36391 274.525697)">4.73</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="329.32083" y="297.312074" transform="rotate(-0 329.32083 297.312074)">5.18</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="332.789481" y="320.098452" transform="rotate(-0 332.789481 320.098452)">5.28</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #202c3b" x="141.12" y="102.8" transform="rotate(-0 141.12 102.8)">1-A · 98가구  |  항목 평균 오차</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_12">
+    <path d="M 611.52 333.105882 
+L 947.52 333.105882 
+L 947.52 118.8 
+L 611.52 118.8 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_20">
+      <path d="M 611.52 333.105882 
+L 611.52 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_21"/>
+     <g id="text_26">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="611.52" y="346.505882" transform="rotate(-0 611.52 346.505882)">0</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_22">
+      <path d="M 656.32 333.105882 
+L 656.32 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_23"/>
+     <g id="text_27">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="656.32" y="346.505882" transform="rotate(-0 656.32 346.505882)">10</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_24">
+      <path d="M 701.12 333.105882 
+L 701.12 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_25"/>
+     <g id="text_28">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="701.12" y="346.505882" transform="rotate(-0 701.12 346.505882)">20</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_26">
+      <path d="M 745.92 333.105882 
+L 745.92 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_27"/>
+     <g id="text_29">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="745.92" y="346.505882" transform="rotate(-0 745.92 346.505882)">30</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_28">
+      <path d="M 790.72 333.105882 
+L 790.72 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_29"/>
+     <g id="text_30">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="790.72" y="346.505882" transform="rotate(-0 790.72 346.505882)">40</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_30">
+      <path d="M 835.52 333.105882 
+L 835.52 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_31"/>
+     <g id="text_31">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="835.52" y="346.505882" transform="rotate(-0 835.52 346.505882)">50</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_32">
+      <path d="M 880.32 333.105882 
+L 880.32 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_33"/>
+     <g id="text_32">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="880.32" y="346.505882" transform="rotate(-0 880.32 346.505882)">60</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_34">
+      <path d="M 925.12 333.105882 
+L 925.12 118.8 
+" clip-path="url(#p2359b03b8f)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_35"/>
+     <g id="text_33">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="925.12" y="346.505882" transform="rotate(-0 925.12 346.505882)">70</text>
+     </g>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #667285" x="779.52" y="368.705882" transform="rotate(-0 779.52 368.705882)">MAE · 만 원/월</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_10">
+     <g id="line2d_36"/>
+     <g id="text_35">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="139.75743" transform="rotate(-0 608.02 139.75743)">LLM</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_37"/>
+     <g id="text_36">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="162.543808" transform="rotate(-0 608.02 162.543808)">CatBoost</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_38"/>
+     <g id="text_37">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="185.330186" transform="rotate(-0 608.02 185.330186)">전년 소비 유지</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_39"/>
+     <g id="text_38">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="208.116563" transform="rotate(-0 608.02 208.116563)">Ridge</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_40"/>
+     <g id="text_39">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="230.902941" transform="rotate(-0 608.02 230.902941)">Lasso</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_41"/>
+     <g id="text_40">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="253.689319" transform="rotate(-0 608.02 253.689319)">중앙값 회귀</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_42"/>
+     <g id="text_41">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="276.475697" transform="rotate(-0 608.02 276.475697)">RF-MAE</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_43"/>
+     <g id="text_42">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="299.262074" transform="rotate(-0 608.02 299.262074)">RF-MSE</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_44"/>
+     <g id="text_43">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="322.048452" transform="rotate(-0 608.02 322.048452)">HistGBM</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_13">
+    <path d="M 611.52 128.541176 
+L 739.919238 128.541176 
+L 739.919238 141.073684 
+L 611.52 141.073684 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #3659d9"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 611.52 151.327554 
+L 718.093535 151.327554 
+L 718.093535 163.860062 
+L 611.52 163.860062 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 611.52 174.113932 
+L 742.025768 174.113932 
+L 742.025768 186.64644 
+L 611.52 186.64644 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 611.52 196.90031 
+L 733.680247 196.90031 
+L 733.680247 209.432817 
+L 611.52 209.432817 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 611.52 219.686687 
+L 728.638831 219.686687 
+L 728.638831 232.219195 
+L 611.52 232.219195 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 611.52 242.473065 
+L 719.702238 242.473065 
+L 719.702238 255.005573 
+L 611.52 255.005573 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 611.52 265.259443 
+L 719.290057 265.259443 
+L 719.290057 277.79195 
+L 611.52 277.79195 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 611.52 288.04582 
+L 722.346332 288.04582 
+L 722.346332 300.578328 
+L 611.52 300.578328 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 611.52 310.832198 
+L 792.789036 310.832198 
+L 792.789036 323.364706 
+L 611.52 323.364706 
+z
+" clip-path="url(#p2359b03b8f)" style="fill: #738293"/>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="744.959238" y="137.80743" transform="rotate(-0 744.959238 137.80743)">28.66</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="723.133535" y="160.593808" transform="rotate(-0 723.133535 160.593808)">23.79</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="747.065768" y="183.380186" transform="rotate(-0 747.065768 183.380186)">29.13</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="738.720247" y="206.166563" transform="rotate(-0 738.720247 206.166563)">27.27</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="733.678831" y="228.952941" transform="rotate(-0 733.678831 228.952941)">26.14</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="724.742238" y="251.739319" transform="rotate(-0 724.742238 251.739319)">24.15</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="724.330057" y="274.525697" transform="rotate(-0 724.330057 274.525697)">24.06</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="727.386332" y="297.312074" transform="rotate(-0 727.386332 297.312074)">24.74</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="797.829036" y="320.098452" transform="rotate(-0 797.829036 320.098452)">40.46</text>
+   </g>
+   <g id="text_53">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #202c3b" x="611.52" y="102.8" transform="rotate(-0 611.52 102.8)">1-A · 98가구  |  총소비 오차</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_22">
+    <path d="M 141.12 665.28 
+L 477.12 665.28 
+L 477.12 450.974118 
+L 141.12 450.974118 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_14">
+     <g id="line2d_45">
+      <path d="M 141.12 665.28 
+L 141.12 450.974118 
+" clip-path="url(#pe3273a64c2)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_46"/>
+     <g id="text_54">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="141.12" y="678.68" transform="rotate(-0 141.12 678.68)">0</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_47">
+      <path d="M 211.856842 665.28 
+L 211.856842 450.974118 
+" clip-path="url(#pe3273a64c2)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_48"/>
+     <g id="text_55">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="211.856842" y="678.68" transform="rotate(-0 211.856842 678.68)">2</text>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_49">
+      <path d="M 282.593684 665.28 
+L 282.593684 450.974118 
+" clip-path="url(#pe3273a64c2)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_50"/>
+     <g id="text_56">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="282.593684" y="678.68" transform="rotate(-0 282.593684 678.68)">4</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_51">
+      <path d="M 353.330526 665.28 
+L 353.330526 450.974118 
+" clip-path="url(#pe3273a64c2)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_52"/>
+     <g id="text_57">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="353.330526" y="678.68" transform="rotate(-0 353.330526 678.68)">6</text>
+     </g>
+    </g>
+    <g id="xtick_18">
+     <g id="line2d_53">
+      <path d="M 424.067368 665.28 
+L 424.067368 450.974118 
+" clip-path="url(#pe3273a64c2)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_54"/>
+     <g id="text_58">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="424.067368" y="678.68" transform="rotate(-0 424.067368 678.68)">8</text>
+     </g>
+    </g>
+    <g id="text_59">
+     <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #667285" x="309.12" y="700.88" transform="rotate(-0 309.12 700.88)">MAE · 만 원/월</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_19">
+     <g id="line2d_55"/>
+     <g id="text_60">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="471.931548" transform="rotate(-0 137.62 471.931548)">LLM</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_56"/>
+     <g id="text_61">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="494.717926" transform="rotate(-0 137.62 494.717926)">CatBoost</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_57"/>
+     <g id="text_62">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="517.504303" transform="rotate(-0 137.62 517.504303)">전년 소비 유지</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_58"/>
+     <g id="text_63">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="540.290681" transform="rotate(-0 137.62 540.290681)">Ridge</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_59"/>
+     <g id="text_64">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="563.077059" transform="rotate(-0 137.62 563.077059)">Lasso</text>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_60"/>
+     <g id="text_65">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="585.863437" transform="rotate(-0 137.62 585.863437)">중앙값 회귀</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_61"/>
+     <g id="text_66">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="608.649814" transform="rotate(-0 137.62 608.649814)">RF-MAE</text>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_62"/>
+     <g id="text_67">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="631.436192" transform="rotate(-0 137.62 631.436192)">RF-MSE</text>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_63"/>
+     <g id="text_68">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="137.62" y="654.22257" transform="rotate(-0 137.62 654.22257)">HistGBM</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_23">
+    <path d="M 141.12 460.715294 
+L 383.805547 460.715294 
+L 383.805547 473.247802 
+L 141.12 473.247802 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #3659d9"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 141.12 483.501672 
+L 380.208338 483.501672 
+L 380.208338 496.03418 
+L 141.12 496.03418 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 141.12 506.28805 
+L 414.700356 506.28805 
+L 414.700356 518.820557 
+L 141.12 518.820557 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 141.12 529.074427 
+L 426.206647 529.074427 
+L 426.206647 541.606935 
+L 141.12 541.606935 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 141.12 551.860805 
+L 389.310233 551.860805 
+L 389.310233 564.393313 
+L 141.12 564.393313 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 141.12 574.647183 
+L 391.43518 574.647183 
+L 391.43518 587.17969 
+L 141.12 587.17969 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 141.12 597.43356 
+L 387.055364 597.43356 
+L 387.055364 609.966068 
+L 141.12 609.966068 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 141.12 620.219938 
+L 404.271932 620.219938 
+L 404.271932 632.752446 
+L 141.12 632.752446 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 141.12 643.006316 
+L 383.561329 643.006316 
+L 383.561329 655.538824 
+L 141.12 655.538824 
+z
+" clip-path="url(#pe3273a64c2)" style="fill: #738293"/>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="388.845547" y="469.981548" transform="rotate(-0 388.845547 469.981548)">6.86</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="385.248338" y="492.767926" transform="rotate(-0 385.248338 492.767926)">6.76</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="419.740356" y="515.554303" transform="rotate(-0 419.740356 515.554303)">7.74</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="431.246647" y="538.340681" transform="rotate(-0 431.246647 538.340681)">8.06</text>
+   </g>
+   <g id="text_73">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="394.350233" y="561.127059" transform="rotate(-0 394.350233 561.127059)">7.02</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="396.47518" y="583.913437" transform="rotate(-0 396.47518 583.913437)">7.08</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="392.095364" y="606.699814" transform="rotate(-0 392.095364 606.699814)">6.95</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="409.311932" y="629.486192" transform="rotate(-0 409.311932 629.486192)">7.44</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="388.601329" y="652.27257" transform="rotate(-0 388.601329 652.27257)">6.85</text>
+   </g>
+   <g id="text_78">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #202c3b" x="141.12" y="434.974118" transform="rotate(-0 141.12 434.974118)">1-B · 40가구  |  항목 평균 오차</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_32">
+    <path d="M 611.52 665.28 
+L 947.52 665.28 
+L 947.52 450.974118 
+L 611.52 450.974118 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_7">
+    <g id="xtick_19">
+     <g id="line2d_64">
+      <path d="M 611.52 665.28 
+L 611.52 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_65"/>
+     <g id="text_79">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="611.52" y="678.68" transform="rotate(-0 611.52 678.68)">0</text>
+     </g>
+    </g>
+    <g id="xtick_20">
+     <g id="line2d_66">
+      <path d="M 656.32 665.28 
+L 656.32 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_67"/>
+     <g id="text_80">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="656.32" y="678.68" transform="rotate(-0 656.32 678.68)">10</text>
+     </g>
+    </g>
+    <g id="xtick_21">
+     <g id="line2d_68">
+      <path d="M 701.12 665.28 
+L 701.12 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_69"/>
+     <g id="text_81">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="701.12" y="678.68" transform="rotate(-0 701.12 678.68)">20</text>
+     </g>
+    </g>
+    <g id="xtick_22">
+     <g id="line2d_70">
+      <path d="M 745.92 665.28 
+L 745.92 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_71"/>
+     <g id="text_82">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="745.92" y="678.68" transform="rotate(-0 745.92 678.68)">30</text>
+     </g>
+    </g>
+    <g id="xtick_23">
+     <g id="line2d_72">
+      <path d="M 790.72 665.28 
+L 790.72 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_73"/>
+     <g id="text_83">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="790.72" y="678.68" transform="rotate(-0 790.72 678.68)">40</text>
+     </g>
+    </g>
+    <g id="xtick_24">
+     <g id="line2d_74">
+      <path d="M 835.52 665.28 
+L 835.52 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_75"/>
+     <g id="text_84">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="835.52" y="678.68" transform="rotate(-0 835.52 678.68)">50</text>
+     </g>
+    </g>
+    <g id="xtick_25">
+     <g id="line2d_76">
+      <path d="M 880.32 665.28 
+L 880.32 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_77"/>
+     <g id="text_85">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="880.32" y="678.68" transform="rotate(-0 880.32 678.68)">60</text>
+     </g>
+    </g>
+    <g id="xtick_26">
+     <g id="line2d_78">
+      <path d="M 925.12 665.28 
+L 925.12 450.974118 
+" clip-path="url(#pccdce6ba15)" style="fill: none; stroke: #e8ecf1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_79"/>
+     <g id="text_86">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #4c5868" x="925.12" y="678.68" transform="rotate(-0 925.12 678.68)">70</text>
+     </g>
+    </g>
+    <g id="text_87">
+     <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: middle; fill: #667285" x="779.52" y="700.88" transform="rotate(-0 779.52 700.88)">MAE · 만 원/월</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_8">
+    <g id="ytick_28">
+     <g id="line2d_80"/>
+     <g id="text_88">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="471.931548" transform="rotate(-0 608.02 471.931548)">LLM</text>
+     </g>
+    </g>
+    <g id="ytick_29">
+     <g id="line2d_81"/>
+     <g id="text_89">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="494.717926" transform="rotate(-0 608.02 494.717926)">CatBoost</text>
+     </g>
+    </g>
+    <g id="ytick_30">
+     <g id="line2d_82"/>
+     <g id="text_90">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="517.504303" transform="rotate(-0 608.02 517.504303)">전년 소비 유지</text>
+     </g>
+    </g>
+    <g id="ytick_31">
+     <g id="line2d_83"/>
+     <g id="text_91">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="540.290681" transform="rotate(-0 608.02 540.290681)">Ridge</text>
+     </g>
+    </g>
+    <g id="ytick_32">
+     <g id="line2d_84"/>
+     <g id="text_92">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="563.077059" transform="rotate(-0 608.02 563.077059)">Lasso</text>
+     </g>
+    </g>
+    <g id="ytick_33">
+     <g id="line2d_85"/>
+     <g id="text_93">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="585.863437" transform="rotate(-0 608.02 585.863437)">중앙값 회귀</text>
+     </g>
+    </g>
+    <g id="ytick_34">
+     <g id="line2d_86"/>
+     <g id="text_94">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="608.649814" transform="rotate(-0 608.02 608.649814)">RF-MAE</text>
+     </g>
+    </g>
+    <g id="ytick_35">
+     <g id="line2d_87"/>
+     <g id="text_95">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="631.436192" transform="rotate(-0 608.02 631.436192)">RF-MSE</text>
+     </g>
+    </g>
+    <g id="ytick_36">
+     <g id="line2d_88"/>
+     <g id="text_96">
+      <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: end; fill: #4c5868" x="608.02" y="654.22257" transform="rotate(-0 608.02 654.22257)">HistGBM</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_33">
+    <path d="M 611.52 460.715294 
+L 809.512124 460.715294 
+L 809.512124 473.247802 
+L 611.52 473.247802 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #3659d9"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 611.52 483.501672 
+L 830.242935 483.501672 
+L 830.242935 496.03418 
+L 611.52 496.03418 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 611.52 506.28805 
+L 836.13671 506.28805 
+L 836.13671 518.820557 
+L 611.52 518.820557 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 611.52 529.074427 
+L 825.329772 529.074427 
+L 825.329772 541.606935 
+L 611.52 541.606935 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 611.52 551.860805 
+L 816.542027 551.860805 
+L 816.542027 564.393313 
+L 611.52 564.393313 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 611.52 574.647183 
+L 899.334754 574.647183 
+L 899.334754 587.17969 
+L 611.52 587.17969 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 611.52 597.43356 
+L 834.572538 597.43356 
+L 834.572538 609.966068 
+L 611.52 609.966068 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 611.52 620.219938 
+L 826.01558 620.219938 
+L 826.01558 632.752446 
+L 611.52 632.752446 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 611.52 643.006316 
+L 869.819111 643.006316 
+L 869.819111 655.538824 
+L 611.52 655.538824 
+z
+" clip-path="url(#pccdce6ba15)" style="fill: #738293"/>
+   </g>
+   <g id="text_97">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="814.552124" y="469.981548" transform="rotate(-0 814.552124 469.981548)">44.19</text>
+   </g>
+   <g id="text_98">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="835.282935" y="492.767926" transform="rotate(-0 835.282935 492.767926)">48.82</text>
+   </g>
+   <g id="text_99">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="841.17671" y="515.554303" transform="rotate(-0 841.17671 515.554303)">50.14</text>
+   </g>
+   <g id="text_100">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="830.369772" y="538.340681" transform="rotate(-0 830.369772 538.340681)">47.73</text>
+   </g>
+   <g id="text_101">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="821.582027" y="561.127059" transform="rotate(-0 821.582027 561.127059)">45.76</text>
+   </g>
+   <g id="text_102">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="904.374754" y="583.913437" transform="rotate(-0 904.374754 583.913437)">64.24</text>
+   </g>
+   <g id="text_103">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="839.612538" y="606.699814" transform="rotate(-0 839.612538 606.699814)">49.79</text>
+   </g>
+   <g id="text_104">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="831.05558" y="629.486192" transform="rotate(-0 831.05558 629.486192)">47.88</text>
+   </g>
+   <g id="text_105">
+    <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #27354a" x="874.859111" y="652.27257" transform="rotate(-0 874.859111 652.27257)">57.66</text>
+   </g>
+   <g id="text_106">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #202c3b" x="611.52" y="434.974118" transform="rotate(-0 611.52 434.974118)">1-B · 40가구  |  총소비 오차</text>
+   </g>
+  </g>
+  <g id="text_107">
+   <text style="font-weight: 700; font-size: 22px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #182638" x="35.28" y="43.56" transform="rotate(-0 35.28 43.56)">1차 개발 실험 | 전체 기준선 비교</text>
+  </g>
+  <g id="text_108">
+   <text style="font-size: 11px; font-family: 'Apple SD Gothic Neo'; text-anchor: start; fill: #667285" x="35.28" y="59.4" transform="rotate(-0 35.28 59.4)">같은 패널의 모든 모형은 같은 평가 집단에서 비교 · 두 과제는 별도 해석</text>
+  </g>
+  <g id="text_109">
+   <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; fill: #667285" transform="translate(35.28 733.834375)">1-B: 가구별 평가 대상 연도 자료 총 52건</text>
+   <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; fill: #667285" transform="translate(35.28 753.025)">출처: 개발 실험 집계 metrics.csv · 2023년 실질금액 · 막대가 짧을수록 오차가 작음</text>
+   <text style="font-size: 10px; font-family: 'Apple SD Gothic Neo'; fill: #667285" transform="translate(35.28 772.2)">개발 결과의 점추정치 비교이며 최종 평가 또는 통계적 우위 판정을 뜻하지 않음</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfc74b7284b">
+   <rect x="141.12" y="118.8" width="336" height="214.305882"/>
+  </clipPath>
+  <clipPath id="p2359b03b8f">
+   <rect x="611.52" y="118.8" width="336" height="214.305882"/>
+  </clipPath>
+  <clipPath id="pe3273a64c2">
+   <rect x="141.12" y="450.974118" width="336" height="214.305882"/>
+  </clipPath>
+  <clipPath id="pccdce6ba15">
+   <rect x="611.52" y="450.974118" width="336" height="214.305882"/>
+  </clipPath>
+ </defs>
+</svg>
