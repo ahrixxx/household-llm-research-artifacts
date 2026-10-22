@@ -50,14 +50,12 @@ def build():
  return data
 
 def main():
- data=build();out=ROOT/'05_policy_simulation';(out/'synthetic_walkthrough.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
- text='''# 실행 예시 · 계획에서 반성, 다음 계획까지
+ data=build();out=ROOT/'04_policy_simulation';(out/'synthetic_walkthrough.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ text='''# 합성 실행 예시: 계획·집행·반성의 연결
 
-**LLM 시연 아님 · 가상 가구 · 정해진 시험용 응답 · 실제 LLM 호출 0회**
+이 예시는 **LLM 시연이 아닙니다**. 가상 가구와 정해진 시험용 응답(`SyntheticModel`)으로 월별 엔진을 실행하고, 계획과 집행 기록이 다음 달에 어떻게 전달되는지 확인했습니다.
 
-실제 LLM을 호출한 시연이 아니라, 정해진 시험용 응답으로 계획·실행·반성·다음 계획의 연결 구조를 확인한 예시입니다.
-
-기존 월별 엔진과 `SyntheticModel`을 실행해 1~4개월 기록을 추출했습니다. 24개월 설정의 첫 4개월을 보여주는 구현 예시이며, 소비 반응이나 반성의 효과를 평가한 실험은 아닙니다. 숫자는 기능 확인용으로 작게 설정한 가상 금액입니다.
+24개월 설정 중 첫 4개월의 기록입니다. 금액은 기능 확인을 위해 작게 설정했습니다.
 
 ## 1. 시작 조건
 
@@ -85,7 +83,7 @@ def main():
  text+='''
 1개월에는 1~3개월 계획을 세우고 1개월만 집행합니다. 2개월에는 실제 월말 잔액과 과거 기록을 받아 2~4개월 계획으로 갱신합니다. 이미 세운 3개월 계획을 그대로 일괄 집행하는 방식이 아닙니다.
 
-## 3. 당월 제약 위반 수정 — 경제적 반성과 별도
+## 3. 예산을 초과한 선택의 수정
 
 1개월의 첫 선택에는 검사 목적으로 식비 **530,001원**을 넣었습니다. 가용 현금 530,000원을 1원 초과하므로 집행하지 않고 같은 시작 상태에서 다시 계획·선택했습니다. 수정 후 식비 100,000원만 집행하여 월말 현금은 430,000원이 되었습니다.
 
@@ -111,9 +109,9 @@ def main():
 | 다음 계획 고려사항 | 다음 달 가용 자원을 다시 확인한다. |
 | 보존 위치·이용 시점 | `interpretation/m003_reflection`, 4개월부터 이용 가능 |
 
-이 문장은 LLM이 실제 경험에서 학습해 만든 결과가 아니라 시험용 응답입니다. 여기서는 반성의 생성·저장·전달 경로를 확인합니다. 반성을 생성해도 3개월 말 현금 69만 원이나 과거 집행 기록은 바뀌지 않습니다.
+위 문구는 `SyntheticModel`에 정해 둔 응답입니다. 생성된 반성은 해석 기록으로 저장되며, 3개월 말 현금 69만 원과 과거 집행 기록은 그대로 유지됩니다.
 
-## 5. 4개월 계획에 무엇이 전달됐는가
+## 5. 다음 달 계획에 전달된 정보
 
 실제 `request/m004_p000`의 입력에서 다음 연결을 확인했습니다.
 
@@ -125,13 +123,13 @@ def main():
 | 최신 반성 | `interpretation/m003_reflection` |
 | 반성의 사실 근거 | `execution/m003`의 월말 현금 기록 |
 
-4개월 계획은 4~6개월을 대상으로 새로 생성됐습니다. 시험용 규칙은 반성 내용을 받아도 소비 규칙을 바꾸지 않으므로 식비는 계속 10만 원입니다. 이 예시에서 확인한 것은 **반성이 다음 계획의 입력으로 연결됨**이며, 반성을 이용해 행동이 개선됐다는 결과는 아닙니다.
+4개월에는 4~6개월 계획을 새로 만들었습니다. 시험용 응답은 반성을 받아도 같은 소비 규칙을 사용하므로 식비는 계속 10만 원입니다. 기록에서는 3개월 말 반성이 4개월 계획 입력에 포함된 것을 확인했습니다. 실제 LLM이 이 정보를 이용해 선택을 바꾸는지는 후속 실험에서 살펴볼 부분입니다.
 
 ## 실행 기록과 재현
 
-[실제 추출 기록 JSON](synthetic_walkthrough.json) · [예시 생성 코드](../scripts/build_monthly_walkthrough.py) · [월별 엔진](../code/phase2_monthly/engine.py)
+[실행 기록 JSON](synthetic_walkthrough.json) · [예시 생성 코드](../scripts/build_monthly_walkthrough.py) · [월별 엔진](../code/phase2_monthly/engine.py)
 
-재생성: 저장소 루트에서 `python3 scripts/build_monthly_walkthrough.py`. 표준 라이브러리만 사용하며 실제 가구자료·API 키·유료 호출이 필요 없습니다. 원시 시험 기록은 임시 디렉터리에서 생성하고 공개용 발췌만 저장합니다.
+저장소 루트에서 `python3 scripts/build_monthly_walkthrough.py`를 실행하면 이 문서와 JSON을 다시 생성합니다. 표준 라이브러리만 사용하며 실제 가구자료나 API 키는 필요하지 않습니다. 전체 시험 기록은 임시 디렉터리에 생성하고, 위 예시에 해당하는 기록을 저장합니다.
 '''
  (out/'EXECUTION_EXAMPLE.md').write_text(text)
  print(json.dumps({'months':data['months'],'checks':data['checks']},ensure_ascii=False,indent=2))

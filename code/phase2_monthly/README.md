@@ -1,14 +1,14 @@
-# 월별 기초 엔진 — 합성자료 실행
+# 월별 시뮬레이션 엔진
 
-이 폴더의 Python 파일과 테스트는 원 연구의 동일 파일을 그대로 복사했습니다. 원본 해시는 루트 PROVENANCE.json 참조
+원 연구의 엔진과 테스트 파일을 그대로 보존한 폴더입니다. 각 파일의 출처와 해시는 [PROVENANCE.json](../../PROVENANCE.json)에 있습니다.
 
 ```sh
 PYTHONPATH=code python3 -m unittest discover -s code/phase2_monthly/tests -v
 PYTHONPATH=code python3 -m phase2_monthly.demo --output outputs/synthetic-demo
 ```
 
-표준 라이브러리만 사용하며 API를 호출하지 않습니다. B/C/D와3/6/9개월 조건의9개 합성 경로,각24개월을 점검합니다. 일부러 첫 예산 위반을 발생시켜 수정 경로도 검사합니다. 인간 행동이나 정책효과의 증거가 아닙니다.
+저장소 루트에서 실행합니다. 표준 라이브러리만 사용하며 LLM API를 호출하지 않습니다. B/C/D와 3·6·9개월 기간을 조합한 9개 합성 경로를 각각 24개월 실행합니다. 첫 선택에 예산 위반을 넣어 수정 과정도 확인합니다.
 
-같은 완료 디렉터리의 재실행은 기존 기록을 재사용합니다. 코드·설정이 바뀌면 새로운 출력 디렉터리를 사용하세요. 실제 가구 데이터를 이 공개 디렉터리에 넣지 마세요.
+완료된 출력 디렉터리를 다시 지정하면 기존 기록을 재사용합니다. 코드나 설정을 바꾸었다면 새 출력 디렉터리를 지정하세요. 출력 폴더는 합성 실행용으로 사용하고 실제 가구자료는 별도로 관리해야 합니다.
 
-최신5조건 설계는 [설계 안내](../../05_policy_simulation/README.md)와 구분합니다.
+이 데모는 엔진 점검용입니다. [최신 정책조건 설계](../../04_policy_simulation/README.md)와 [4개월 실행 예시](../../04_policy_simulation/EXECUTION_EXAMPLE.md)를 함께 참고할 수 있습니다.

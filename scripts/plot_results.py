@@ -10,8 +10,8 @@ font=Path('/System/Library/Fonts/AppleSDGothicNeo.ttc')
 if font.exists():
  font_manager.fontManager.addfont(str(font));plt.rcParams['font.family']=font_manager.FontProperties(fname=str(font)).get_name()
 plt.rcParams.update({'font.size':11,'axes.unicode_minus':False,'svg.fonttype':'none','pdf.fonttype':42})
-rows=list(csv.DictReader((ROOT/'04_results/metrics.csv').open()))
-out=ROOT/'04_results/figures';out.mkdir(exist_ok=True)
+rows=list(csv.DictReader((ROOT/'03_results/metrics.csv').open()))
+out=ROOT/'03_results/figures';out.mkdir(exist_ok=True)
 order=['llm_v61','llm_v6','catboost_mae','persistence','ridge','lasso','median_l1','rf_mae','rf_mse','gbm_mae']
 labels={'llm_v61':'LLM','llm_v6':'LLM','catboost_mae':'CatBoost','persistence':'전년 소비 유지','ridge':'Ridge','lasso':'Lasso','median_l1':'중앙값 회귀','rf_mae':'RF-MAE','rf_mse':'RF-MSE','gbm_mae':'HistGBM','catboost':'CatBoost','catboost_llm':'CatBoost 보조 LLM'}
 def panel(ax,data,key,limit,title):
